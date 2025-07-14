@@ -1,0 +1,29 @@
+GET http://localhost:5003/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+###
+GET http://localhost:5003/movies?genre=action
+
+###
+POST http://localhost:5003/movies
+Content-Type: application/json
+
+{
+  "title": "Pelitos",
+  "year": 2002,
+  "director": "Alfonso Canseco",
+  "duration": 142,
+  "poster": "https://i.ebayimg.com/images/g/4goAAOSwMyBe7hnQ/s-l1200.webp",
+  "genre": ["Drama","Action"],
+  "rate": 9.9
+}
+
+###
+PATCH http://localhost:5003/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "title": "holaaaaaaaaaaaaaaaaaaaaaaaaa"
+}
+
+
+
